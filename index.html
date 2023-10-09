@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Galería</title>
+</head>
+<body>
+    <!-- seccion inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <h1>Mi Galería</h1>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#artistas">Artistas</a>
+                <a href="#exposiciones">exposiciones</a>
+                <a href="#cursos">Cursos</a>
+            </nav>
+            <div class="contenedor-fotos">
+                <img src="img/foto1.jpg" alt="">
+                <img src="img/foto2.jpg" alt="">
+                <img src="img/foto3.jpg" alt="">
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consequatur aliquid eum rem, quod quam praesentium tenetur inventore neque. Laboriosam excepturi delectus mollitia officia corporis blanditiis amet ea consequatur repellat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección artistas -->
+    <section id="artistas">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <nav>
+                            <a href="javascript:void(0)" onclick="cambiarArtista(1)" id="op1" class="selected">
+                            Da Vinci
+                            </a>
+                            <a href="javascript:void(0)" onclick="cambiarArtista(2)" id="op2">
+                                Van Gogh
+                            </a>
+                            <a href="javascript:void(0)" onclick="cambiarArtista(3)" id="op3">
+                                Picasso
+                            </a>
+                        </nav>
+                        <p id="descripcion" class="descripcion">Leonardo da Vinci fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Falleció acompañado de Francesco Melzi, a quien legó sus proyectos, diseños y pinturas</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/leonardo.jpg" alt="" id="foto-artista">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección exposiciones -->
+    <section id="exposiciones">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>20 de Febrero</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Central Palace</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Obras de Da Vinci</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                    </div>
+                    <button>Leer más</button>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>5 de Marzo</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Gran Avenida</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Obras Miguel Angel</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                    </div>
+                    <button>Leer más</button>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>6 de Julio</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Music Hall</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Obras de Rodolfo Gulf</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                    </div>
+                    <button>Leer más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección cursos -->
+    <section id="cursos">
+        <video class="video-container" autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h2>Adquiere un curso de pinutra ahora mismo!!</h2>
+            <div class="cursos">
+                <button>Curso 1 <br> Comprar </button>
+                <button>Curso 2 <br> Comprar </button>
+                <button>Curso 3 <br> Comprar </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
